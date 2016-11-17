@@ -12,7 +12,7 @@ RUN apt-get update \
  && dpkg -i /tmp/openfire_${OPENFIRE_VERSION}_all.deb \
  && rm -rf /tmp/openfire_${OPENFIRE_VERSION}_all.deb
 
-EXPOSE 5222 5223  5269 7777 9090  9091
+EXPOSE 5222 5223  5269 7777 9090 9091
 
 COPY entrypoint.sh /sbin/entrypoint.sh
 RUN chmod 755 /sbin/entrypoint.sh
